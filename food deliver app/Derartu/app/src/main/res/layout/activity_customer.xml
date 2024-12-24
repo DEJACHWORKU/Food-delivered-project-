@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".customer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mainlogoo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/notfication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_circle_notifications_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppins"
+        android:text="Welcome Customer"
+        android:textAlignment="center"
+        android:textColor="@color/main"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_below="@+id/welcomeTextView"
+        android:id="@+id/welcomeTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppins"
+        android:text="We love having you here."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_below="@id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/search"
+        app:iconifiedByDefault="false"
+        android:fontFamily="@font/poppins"
+        app:searchHintIcon="@null"
+        app:queryHint="What do you want to eat today?"
+        android:focusable="false"
+        app:closeIcon="@drawable/ic_baseline_cleaning_services_24"
+        app:searchIcon="@drawable/ic_baseline_youtube_searched_for_24"
+        android:background="@drawable/mainbutton"/>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_below="@+id/search"
+        android:id="@+id/image_slider"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:iss_auto_cycle="true"
+        android:padding="10dp"
+        app:iss_period="1000"
+        app:iss_delay="1000"
+        app:iss_text_align="CENTER"/>
+
+    <TextView
+        android:layout_below="@+id/image_slider"
+        android:id="@+id/welcomeTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Categories"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_below="@id/welcomeTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:id="@+id/row12"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="250dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clothingCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/clothingName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/clothingImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Local Foods"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/clothingImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ccopy" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/library"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/elecName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/elecImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Burger Pizza"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/elecImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/cccopy" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/library1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/elecName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/elecImage1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Drinks"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/elecImage1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ccccopy" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_below="@+id/welcomeTextView2"
+        android:id="@+id/welcomeTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Coming Soon Updates"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/welcomeTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/insviewbook"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/clothingName4"
+                        android:text="Book Hotel Room"
+                        android:textSize="20sp"
+                        android:textColor="@color/main"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="25dp"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/clothingImage2"
+                        android:src="@drawable/ic_baseline_hotel_24"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/insviewbook"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/insviewbook1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/clothingName5"
+                        android:text="Book Wedding Ceremony"
+                        android:textSize="20sp"
+                        android:textColor="@color/main"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="25dp"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/clothingImage3"
+                        android:src="@drawable/ic_baseline_celebration_24"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/insviewbook"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/insviewbook2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/logoutcart"
+                        android:text="Logout"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="25dp"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/logoutcar"
+                        android:src="@drawable/ic_baseline_logout_24"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </RelativeLayout>
+
+</ScrollView>

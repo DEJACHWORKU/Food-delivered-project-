@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard2"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:id="@+id/recTitle"
+            android:text="Full Name"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="223dp"
+            android:layout_height="30dp"
+            android:id="@+id/recLang"
+            android:text="Phone Number"
+            android:layout_toEndOf="@id/recid"
+            android:layout_marginTop="225dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/recemail"
+            android:text="Description"
+            android:layout_below="@+id/recDesc"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:id="@+id/recDesc"
+            android:text="Food Name"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/main"
+            android:textSize="12sp"
+            android:layout_below="@id/recTitle"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recid"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_below="@id/recemail"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etb"
+            android:text="Current Location"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_below="@id/recid"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

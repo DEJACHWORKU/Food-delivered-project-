@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addlocalfoods">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/mainbutton">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Add Local Food Data"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/main"/>
+
+
+            <FrameLayout
+                android:id="@+id/layoutimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageprofile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_baseline_arrow_circle_up_24"
+                    android:scaleType="centerCrop"
+                    app:civ_border_overlay="true" />
+
+                <FrameLayout
+                    android:id="@+id/qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/qrimg"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/ic_baseline_arrow_circle_down_24"
+                        android:scaleType="centerCrop"
+                        app:civ_border_overlay="true"
+
+                        />
+                </FrameLayout>
+            </FrameLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/studname"
+                android:background="@drawable/mainbutton"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:hint="Enter Food Name"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/main"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:id="@+id/studidno"
+                android:background="@drawable/mainbutton"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:hint="Enter Food Description"
+                android:gravity="start|top"
+                android:textColor="@color/main"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/studcamp"
+                android:background="@drawable/mainbutton"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:hint="Enter Food Price"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/main"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/studpass"
+                android:background="@drawable/mainbutton"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:hint="Add Addtional thing if it have"
+                android:fontFamily="@font/poppins"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/main"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Add to Local foods"
+                android:fontFamily="@font/poppins"
+                android:id="@+id/saveButton"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+

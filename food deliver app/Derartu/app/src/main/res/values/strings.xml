@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Derartu Hotel</string>
+    <string name="descr">Located in the heart of Asella, Derartu Hotel stands as a beacon of comfort and convenience for travelers exploring the vibrant city and its surroundings. Named after the renowned Ethiopian long-distance runner Derartu Tulu, the hotel embodies the spirit of excellence and hospitality.</string>
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Amharic</item>
+        <item>Afaan Oromo</item>
+        <item>Afar</item>
+        <item>Tigrega</item>
+    </string-array>
+</resources>

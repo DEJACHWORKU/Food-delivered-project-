@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "370067051331",
+    "project_id": "derartu-6b384",
+    "storage_bucket": "derartu-6b384.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370067051331:android:a8020e50ab997c8f1715f6",
+        "android_client_info": {
+          "package_name": "com.example.derartu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOf3djk9VZKP3_QhtczEuIb5wOt-CTJEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
